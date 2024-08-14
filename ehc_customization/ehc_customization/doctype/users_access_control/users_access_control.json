@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:user",
+ "creation": "2024-03-14 14:07:12.057249",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "column_break_zdkyc",
+  "role_profile",
+  "section_break_zawnj",
+  "get_roles",
+  "roles_assigned",
+  "get_modules",
+  "doc_created_by_user",
+  "users_roles"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "unique": 1
+  },
+  {
+   "fieldname": "get_roles",
+   "fieldtype": "Table",
+   "label": "Get Roles",
+   "options": "Get Roles"
+  },
+  {
+   "fieldname": "get_modules",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Get Modules",
+   "options": "Get Modules"
+  },
+  {
+   "fieldname": "role_profile",
+   "fieldtype": "Link",
+   "label": "Role Profile",
+   "options": "Role Profile"
+  },
+  {
+   "fieldname": "column_break_zdkyc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_zawnj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "doc_created_by_user",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Doc created by User"
+  },
+  {
+   "fieldname": "roles_assigned",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Roles Assigned",
+   "options": "Roles Assigned"
+  },
+  {
+   "fieldname": "users_roles",
+   "fieldtype": "HTML",
+   "label": "Users Roles"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-18 13:49:51.832587",
+ "modified_by": "Administrator",
+ "module": "Ehc Customization",
+ "name": "Users Access Control",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,12 @@
+{
+    "Material Request": [
+        {
+        "fieldname": "custom_budget_validation",
+        "fieldtype": "Check",
+        "label": "Budget Validation",
+        "insert_after": "scan_barcode",
+        "read_only": 1,
+        "module": "EHC Customization"
+        }
+    ]
+}

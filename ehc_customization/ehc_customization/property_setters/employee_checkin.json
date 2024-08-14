@@ -1,0 +1,11 @@
+{
+    "Employee Checkin": [
+        {
+            "doctype": "Employee Checkin",
+            "fieldname": "time",
+            "property": "permlevel",
+            "property_type": "Int",
+            "value": "0"
+        }
+    ]
+}

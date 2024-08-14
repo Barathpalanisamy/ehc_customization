@@ -1,0 +1,18 @@
+{
+    "Material Request Item": [
+        {
+        "fieldname": "custom_available_qty",
+        "fieldtype": "Float",
+        "insert_after": "qty_info_col_break",
+        "label": "Available Qty",
+        "read_only": 1,
+        "module": "EHC Customization"
+        } 
+
+    ]
+}
+
+
+
+    
+   

@@ -1,0 +1,25 @@
+{
+    "Budget Transfer": [
+        {
+        "fieldname": "custom_cost_center",
+        "fieldtype": "Link",
+        "insert_after": "from_budget_against",
+        "label": "Cost Center",
+        "options": "Cost Center",
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_accounting_department",
+        "fieldtype": "Link",
+        "insert_after": "custom_cost_center",
+        "label": "Accounting Department",
+        "options": "Accounting Department",
+        "module": "EHC Customization"
+        } 
+    ]
+}
+
+
+
+    
+   

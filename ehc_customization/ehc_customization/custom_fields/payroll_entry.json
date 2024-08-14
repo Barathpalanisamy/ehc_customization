@@ -1,0 +1,17 @@
+{
+    "Payroll Entry": [
+        {
+        "fieldname": "custom_payroll_type_ehc",
+        "fieldtype": "Link",
+        "label": "Payroll Type",
+        "insert_after": "number_of_employees",
+        "options":"Payroll Type",
+        "module": "EHC Customization"
+        } 
+
+    ]
+}
+
+
+
+    

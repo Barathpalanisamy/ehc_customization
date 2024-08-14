@@ -1,0 +1,12 @@
+{
+    "HR Settings": [
+        {
+        "fieldname": "custom_scholarship_access_role",
+        "fieldtype": "Link",
+        "insert_after": "retirement_age",
+        "label": "Scholarship Access Role",
+        "options": "Role",
+        "module": "EHC Customization"
+        }
+    ]
+}

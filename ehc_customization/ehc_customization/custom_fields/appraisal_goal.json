@@ -1,0 +1,14 @@
+{
+    "Appraisal Goal":[
+        {
+            "fieldname": "total_allocate_percentage",
+            "fieldtype": "Percent",
+            "insert_after": "score_earned",
+            "label": "Score Earned Percentage",
+            "read_only": 1,
+            "in_list_view":1,
+            "module": "EHC Customization"
+        } 
+
+    ]
+}

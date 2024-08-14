@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-24 13:44:59.230629",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "property",
+  "type"
+ ],
+ "fields": [
+  {
+   "fieldname": "property",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Property",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "property"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-02 11:37:08.809723",
+ "modified_by": "Administrator",
+ "module": "Ehc Customization",
+ "name": "Responsibilty",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

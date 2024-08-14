@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2024-04-29 20:22:53.522533",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "employee",
+  "time_interval",
+  "column_break_76zbz",
+  "fiscal_year",
+  "section_break_01chr",
+  "monthly_allocation",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fiscal_year",
+   "fieldtype": "Link",
+   "label": "Fiscal Year",
+   "options": "Fiscal Year"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "monthly_allocation",
+   "fieldtype": "Table",
+   "label": "Monthly Allocation",
+   "options": "Time Allocation"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Permission Policy Assignment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_76zbz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_01chr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Monthly",
+   "fieldname": "time_interval",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Time Interval",
+   "options": "Monthly\nDaily\nAnnual"
+  },
+  {
+   "default": "Policy-Assignment.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "Policy-Assignment.-"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Attendance Request",
+   "link_fieldname": "custom_policy"
+  }
+ ],
+ "modified": "2024-05-10 10:02:09.512824",
+ "modified_by": "Administrator",
+ "module": "Ehc Customization",
+ "name": "Permission Policy Assignment",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

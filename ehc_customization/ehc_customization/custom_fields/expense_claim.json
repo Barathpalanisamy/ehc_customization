@@ -1,0 +1,12 @@
+{
+    "Expense Claim": [
+        {
+        "fieldname": "custom_budget_validation",
+        "fieldtype": "Check",
+        "label": "Budget Validation",
+        "insert_after": "company",
+        "read_only": 1,
+        "module": "EHC Customization"
+        }
+    ]
+}

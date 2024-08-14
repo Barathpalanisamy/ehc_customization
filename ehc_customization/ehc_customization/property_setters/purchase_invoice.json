@@ -1,0 +1,10 @@
+{
+    "Purchase Invoice": [
+        {
+            "doctype": "Purchase Invoice",
+            "fieldname": "custom_multiple_discount",
+            "property": "depends_on",
+            "property_type": "Data",
+            "value": ""
+        }
+] } 

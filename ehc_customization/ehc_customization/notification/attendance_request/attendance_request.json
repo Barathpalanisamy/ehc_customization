@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state == 'Waiting for Approval'",
+ "creation": "2024-05-23 21:08:05.115418",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Attendance Request",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Permission Request Notification</title>\n    <style>\n        /* Style for the notification message */\n        .notification {\n            background-color: #f2f2f2;\n            color: #333;\n            padding: 20px;\n            margin: 20px;\n            border-left: 6px solid #FFC107; /* Orange border */\n            border-radius: 5px;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"notification\">\n        <h3>New Permission Request Received</h3>\n        <p>You have received a new permission request from an employee {{doc.employee}}.</p>\n        <p>Please review the request as soon as possible and take appropriate action.</p>\n        <p>Thank you.</p>\n    </div>\n</body>\n</html>\n",
+ "message_type": "HTML",
+ "modified": "2024-05-28 15:58:47.144963",
+ "modified_by": "Administrator",
+ "module": "ehc_customization",
+ "name": "Attendance Request",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "custom_reporting_manager"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "Permission Request Received",
+ "value_changed": ""
+}

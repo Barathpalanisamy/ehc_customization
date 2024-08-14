@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuous Lateness</title>
+</head>
+<body>
+    <h2>Dear {{doc.employee}},</h2>
+
+    <p>It has come to our attention that you have been consistently arriving late to work recently. Punctuality is crucial to the success of our team and our organization as a whole.</p>
+
+    <p>We understand that occasional lateness can happen due to unforeseen circumstances. However, consistent lateness can disrupt workflow and affect team morale.</p>
+
+    <p>We value your commitment and dedication to your role, and we want to address this matter constructively. Could you please provide us with some insight into the reasons behind your continuous lateness in this form? <a href="app/violation-request/"+{{doc.name}}>Reason</a></p>
+
+    <p>Understanding the root cause will help us work together to find solutions and ensure that you can fulfill your responsibilities effectively.</p>
+
+    <p>Thank you for your attention to this issue. We look forward to resolving it together.</p>
+
+    <p>Sincerely,<br>
+    {{frappe.session.user}}<br>
+</body>
+</html>

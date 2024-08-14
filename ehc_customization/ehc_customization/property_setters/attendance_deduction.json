@@ -1,0 +1,32 @@
+{
+    "Attendance Deduction": [
+        {
+            "doctype": "Attendance Deduction",
+            "fieldname": "month",
+            "property": "depends_on",
+            "property_type": "Data",
+            "value": "eval:doc.violation_request;"
+        },
+        {
+            "doctype": "Attendance Deduction",
+            "fieldname": "month",
+            "property": "fetch_from",
+            "property_type": "Small Text",
+            "value": "violation_request.month"
+        },
+        {
+            "doctype": "Attendance Deduction",
+            "fieldname": "late_count",
+            "property": "depends_on",
+            "property_type": "Data",
+            "value": "eval:doc.violation_request;"
+        },
+        {
+            "doctype": "Attendance Deduction",
+            "fieldname": "late_count",
+            "property": "fetch_from",
+            "property_type": "Small Text",
+            "value": "violation_request.late_count"
+        }
+
+] } 

@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-12 16:44:31.230776",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "appraisal_percentage",
+  "goal_score_percentage",
+  "feedback_percentage",
+  "self_rating_percentage"
+ ],
+ "fields": [
+  {
+   "fieldname": "appraisal_percentage",
+   "fieldtype": "Section Break",
+   "label": "Appraisal Percentage Allocation"
+  },
+  {
+   "fieldname": "goal_score_percentage",
+   "fieldtype": "Percent",
+   "label": "Goal Score Percentage"
+  },
+  {
+   "fieldname": "feedback_percentage",
+   "fieldtype": "Percent",
+   "label": "Feedback Percentage"
+  },
+  {
+   "fieldname": "self_rating_percentage",
+   "fieldtype": "Percent",
+   "label": "Self Rating Percentage"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-04-12 17:57:57.463197",
+ "modified_by": "Administrator",
+ "module": "Ehc Customization",
+ "name": "Appraisal Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

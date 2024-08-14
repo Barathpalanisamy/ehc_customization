@@ -1,0 +1,20 @@
+{
+    "Stock Entry": [
+        {
+        "fieldname": "custom_cost_center",
+        "fieldtype": "Link",
+        "insert_after": "accounting_dimensions_section",
+        "label": "Cost Center",
+        "options": "Cost Center",
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_budget_validation",
+        "fieldtype": "Check",
+        "insert_after": "posting_time",
+        "label": "Budget Validation",
+        "read_only": 0,
+        "module": "EHC Customization"
+        } 
+    ]
+}

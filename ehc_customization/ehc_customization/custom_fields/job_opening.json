@@ -1,0 +1,20 @@
+{
+    "Job Opening": [
+        {
+            "fieldname": "custom_publish_internal",
+            "fieldtype": "Check",
+            "label": "Publish on Internal Website",
+            "insert_after": "publish",
+            "depends_on": "eval:doc.job_opening_category == 'Internal'",
+            "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_all_employee",
+        "fieldtype": "Check",
+        "label": "Send Notification to all Employees",
+        "insert_after": "column_break_12",
+        "depends_on": "eval:doc.job_opening_category == 'Internal'",
+        "module": "EHC Customization"
+        }
+    ]
+}

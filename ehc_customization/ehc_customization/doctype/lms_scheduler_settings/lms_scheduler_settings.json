@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-26 10:34:53.255791",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "scheduler_frequency",
+  "cron_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "scheduler_frequency",
+   "fieldtype": "Select",
+   "label": "Scheduler Frequency",
+   "options": "All\nHourly\nDaily\nWeekly\nMonthly\nCron\nYearly\nAnnual"
+  },
+  {
+   "depends_on": "eval:doc.scheduler_frequency == 'Cron'",
+   "fieldname": "cron_time",
+   "fieldtype": "Data",
+   "label": "Cron Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-06-26 10:40:28.416499",
+ "modified_by": "Administrator",
+ "module": "Ehc Customization",
+ "name": "LMS Scheduler Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

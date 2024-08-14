@@ -1,0 +1,30 @@
+{
+    "Data Import": [
+        {
+        "fieldname": "is_merge",
+        "fieldtype": "Check",
+        "label": "Is Merge Field File",
+        "insert_after": "mute_emails",
+        "module": "EHC Customization",
+        "depends_on": "eval:!doc.__islocal"
+
+        },
+        {
+        "fieldname": "marge_file_attach",
+        "fieldtype": "Attach",
+        "label": "Merge File Attach",
+        "insert_after": "custom_payroll_date",
+        "module": "EHC Customization",
+        "depends_on": "eval:doc.custom_payroll_date"
+        },
+        {
+        "fieldname": "custom_payroll_date",
+        "fieldtype": "Date",
+        "label": "Payroll Date",
+        "insert_after": "is_merge",
+        "module": "EHC Customization",
+        "depends_on": "eval:doc.is_merge",
+        "mandatory_depends_on": "eval:doc.is_merge"
+        }
+    ]
+}

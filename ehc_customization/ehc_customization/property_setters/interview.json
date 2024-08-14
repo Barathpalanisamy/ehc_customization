@@ -1,0 +1,11 @@
+{
+    "Interview": [
+        {
+            "doctype": "Interview",
+            "fieldname": "amended_from",
+            "property": "ignore_user_permissions",
+            "property_type": "Check",
+            "value": "1"
+        }
+    ]
+}

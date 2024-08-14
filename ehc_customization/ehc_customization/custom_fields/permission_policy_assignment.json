@@ -1,0 +1,14 @@
+{
+    "Permission Policy Assignment":[
+        {
+            "fieldname": "custom_permission_policy",
+            "fieldtype": "Link",
+            "insert_after": "fiscal_year",
+            "label": "Permission Policy",
+            "read_only": 0,
+            "options": "Permission Policy",
+            "module": "EHC Customization"
+        }
+
+    ]
+}

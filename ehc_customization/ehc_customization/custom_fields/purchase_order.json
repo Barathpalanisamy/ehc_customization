@@ -1,0 +1,12 @@
+{
+    "Purchase Order": [
+        {
+        "fieldname": "custom_budget_validation",
+        "fieldtype": "Check",
+        "label": "Budget Validation",
+        "insert_after": "schedule_date",
+        "read_only": 1,
+        "module": "EHC Customization"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "Job Settings": [
+        {
+        "fieldname": "all_feadback",
+        "fieldtype": "Link",
+        "options":"Role",
+        "insert_after": "allow_posting",
+        "label": "Allow All Feadback Show",
+        "module": "EHC Customization"
+        }
+    ]}

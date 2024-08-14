@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2024-05-02 15:39:44.369701",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "employee",
+  "email_id",
+  "user",
+  "month",
+  "fiscal_year",
+  "section_break_nfetg",
+  "status",
+  "hr_details",
+  "attendance_team",
+  "late_count",
+  "transaction_date",
+  "late_entry_dates",
+  "late_hours",
+  "section_break_2ruia",
+  "employee_reason"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "label": "Month",
+   "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nApproved\nForward To HR\nForward To Employee\nForward To Manager\nForward To Attendance Team"
+  },
+  {
+   "fieldname": "employee_reason",
+   "fieldtype": "Text Editor",
+   "label": "Employee Reason"
+  },
+  {
+   "fieldname": "section_break_nfetg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_2ruia",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "late_count",
+   "fieldtype": "Int",
+   "label": "Late Count",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "late_hours",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Late Hours",
+   "precision": "2"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID",
+   "options": "Email",
+   "read_only": 1
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "hr_details",
+   "fieldtype": "Link",
+   "label": "Hr Details",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "attendance_team",
+   "fieldtype": "Link",
+   "label": "Attendance Team",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "label": "Transaction Date"
+  },
+  {
+   "fieldname": "late_entry_dates",
+   "fieldtype": "Small Text",
+   "label": "Late Entry Dates"
+  },
+  {
+   "fieldname": "fiscal_year",
+   "fieldtype": "Link",
+   "label": "Fiscal Year",
+   "options": "Fiscal Year",
+   "reqd": 1
+  },
+  {
+   "default": "VAL.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "VAL.-"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-10 06:34:07.888291",
+ "modified_by": "Administrator",
+ "module": "ehc_customization",
+ "name": "Violation Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

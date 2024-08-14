@@ -1,0 +1,10 @@
+{
+    "Monthly Time Allocation": [
+        {
+            "doctype": "Monthly Time Allocation",
+            "fieldname": "employee",
+            "property": "unique",
+            "property_type": "Check",
+            "value": "1"
+        }
+] } 

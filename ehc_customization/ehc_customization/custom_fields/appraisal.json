@@ -1,0 +1,61 @@
+{
+    "Appraisal": [
+        {
+        "fieldname": "goal_score_allocate_percentage",
+        "fieldtype": "Percent",
+        "insert_after": "remarks",
+        "label": "Total Goal Score Allocate Percentage",
+        "read_only": 1,
+        "hidden":1,
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "goal_score_earned_percentage",
+        "fieldtype": "Percent",
+        "insert_after": "goal_score_allocate_percentage",
+        "label": "Total Goal Score Earned Percentage",
+        "read_only": 1,
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "self_allocate_percentage",
+        "fieldtype": "Percent",
+        "insert_after": "self_ratings",
+        "label": "Total Self Rating Allocate Percentage",
+        "read_only": 1,
+        "hidden":1,
+        "module": "EHC Customization"
+        } ,
+        {
+        "fieldname": "self_earned_percentage",
+        "fieldtype": "Percent",
+        "insert_after": "self_allocate_percentage",
+        "label": "Total Self Rating Earned Percentage",
+        "read_only": 1,
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "avg_earned_percentage",
+        "fieldtype": "Percent",
+        "insert_after": "avg_feedback_score",
+        "label": "Total Avg Feedback Earned Percentage",
+        "read_only": 1,
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "column_break1",
+        "fieldtype": "Column Break",
+        "insert_after": "final_score",
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "total_earned_percentage",
+        "fieldtype": "Percent",
+        "insert_after": "column_break1",
+        "label": "Total Earned Percentage",
+        "read_only": 1,
+        "module": "EHC Customization"
+        } 
+
+    ]
+}

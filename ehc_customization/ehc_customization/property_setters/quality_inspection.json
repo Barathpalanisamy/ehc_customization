@@ -1,0 +1,41 @@
+{
+    "Quality Inspection": [
+        {
+            "doctype": "Quality Inspection",
+            "fieldname": "ehc_evaluator",
+            "property": "hidden",
+            "property_type": "Check",
+            "value": 1
+        },        {
+            "doctype": "Quality Inspection",
+            "fieldname": "ehc_validator",
+            "property": "hidden",
+            "property_type": "Check",
+            "value": 1
+        },        {
+            "doctype": "Quality Inspection",
+            "fieldname": "ehc_investigator",
+            "property": "hidden",
+            "property_type": "Check",
+            "value": 1
+        },        {
+            "doctype": "Quality Inspection",
+            "fieldname": "ehc_approver",
+            "property": "hidden",
+            "property_type": "Check",
+            "value": 1
+        },        {
+            "doctype": "Quality Inspection",
+            "fieldname": "network_representative",
+            "property": "hidden",
+            "property_type": "Check",
+            "value": 1
+        },        {
+            "doctype": "Quality Inspection",
+            "fieldname": "custom_facility_representative_",
+            "property": "hidden",
+            "property_type": "Check",
+            "value": 1
+        }
+    ]
+}

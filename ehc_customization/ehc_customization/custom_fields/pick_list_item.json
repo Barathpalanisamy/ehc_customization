@@ -1,0 +1,17 @@
+{
+    "Pick List Item": [
+        {
+        "fieldname": "custom_available_qty",
+        "fieldtype": "Float",
+        "label": "Available Qty",
+        "insert_after": "picked_qty",
+        "read_only": 1,
+        "module": "EHC Customization"
+        } 
+
+    ]
+}
+
+
+
+    

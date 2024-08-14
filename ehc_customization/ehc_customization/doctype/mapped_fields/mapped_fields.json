@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "beta": 1,
+ "creation": "2024-05-06 11:52:43.092751",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "source_fields",
+  "target_fields",
+  "source_fieldname",
+  "target_fieldname"
+ ],
+ "fields": [
+  {
+   "fieldname": "source_fields",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Source Fields",
+   "translatable": 1
+  },
+  {
+   "fieldname": "target_fields",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Target Fields",
+   "translatable": 1
+  },
+  {
+   "fieldname": "source_fieldname",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Source Fieldname"
+  },
+  {
+   "fieldname": "target_fieldname",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Target Fieldname"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-08 13:57:44.557480",
+ "modified_by": "Administrator",
+ "module": "Ehc Customization",
+ "name": "Mapped Fields",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

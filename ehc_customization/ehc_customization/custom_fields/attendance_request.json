@@ -1,0 +1,51 @@
+{
+    "Attendance Request": [
+        {
+        "fieldname": "custom_attendance",
+        "fieldtype": "Link",
+        "insert_after": "amended_from",
+        "label": "Attendance",
+        "allow_on_submit": 1,
+        "hidden": 1,
+        "options": "Attendance",
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_reason",
+        "fieldtype": "Link",
+        "insert_after": "reason",
+        "label": "Reason",
+        "options": "Permission Type",
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_available_hours",
+        "fieldtype": "Float",
+        "insert_after": "department",
+        "label": "Available Hours",
+        "depends_on": "custom_reason",
+        "read_only":1,
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_reporting_manager",
+        "fieldtype": "Link",
+        "insert_after": "department",
+        "label": "Reporting Manager",
+        "options": "User",
+        "mandatory_depends_on": "eval:doc.employee;",
+        "read_only":1,
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_policy",
+        "fieldtype": "Link",
+        "insert_after": "custom_attendance",
+        "label": "Policy",
+        "options": "Permission Policy Assignment",
+        "fetch_from": "attendance_request.employee",
+        "hidden": 1,
+        "module": "EHC Customization"
+        }
+    ]
+}

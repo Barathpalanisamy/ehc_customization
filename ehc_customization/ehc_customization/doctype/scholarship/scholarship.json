@@ -1,0 +1,191 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2024-05-07 11:02:37.244036",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "scholarship_type",
+  "start_date",
+  "column_break_cz7s8",
+  "processing",
+  "end_date",
+  "previous_end_date",
+  "employee_details_section",
+  "employee",
+  "employee_name",
+  "column_break_n97uy",
+  "designation",
+  "department",
+  "scholarship_id",
+  "previous_time_period",
+  "existing_details_section",
+  "leave_details",
+  "salary_structure",
+  "is_end",
+  "update_button",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "scholarship_type",
+   "fieldtype": "Select",
+   "label": "Scholarship Type",
+   "options": "\nInternal Dispatch\nScholarship"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Scholarship",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "column_break_cz7s8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "employee_details_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Link",
+   "label": "Employee Name",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fieldname": "processing",
+   "fieldtype": "Select",
+   "label": "Processing Status",
+   "options": "Start\nExtend\nEnd"
+  },
+  {
+   "fieldname": "existing_details_section",
+   "fieldtype": "Section Break",
+   "label": "Existing Details"
+  },
+  {
+   "fieldname": "leave_details",
+   "fieldtype": "Link",
+   "label": "Leave Details",
+   "options": "Leave Allocation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "salary_structure",
+   "fieldtype": "Link",
+   "label": "Salary Structure",
+   "options": "Salary Structure",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_n97uy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "scholarship_id",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Scholarship ID",
+   "options": "Scholarship"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "SCH.-",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "is_end",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is End"
+  },
+  {
+   "default": "0",
+   "fieldname": "update_button",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Update Button"
+  },
+  {
+   "fieldname": "previous_end_date",
+   "fieldtype": "Data",
+   "label": "Previous End Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "previous_time_period",
+   "fieldtype": "Data",
+   "label": "Previous Time Period"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-06-24 11:30:23.708226",
+ "modified_by": "Administrator",
+ "module": "ehc_customization",
+ "name": "Scholarship",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

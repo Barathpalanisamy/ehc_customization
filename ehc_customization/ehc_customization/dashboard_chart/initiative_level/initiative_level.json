@@ -1,0 +1,39 @@
+{
+ "chart_name": "Initiative Level",
+ "chart_type": "Report",
+ "creation": "2024-06-28 09:52:54.870082",
+ "custom_options": "{\"x_field\": \"subject\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"y_field\": \"progress\", \"color\": \"#39E4A5\", \"name\": \"row 1\"}], \"y_fields\": [\"progress\"], \"colors\": [\"#39E4A5\"]} ",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "document_type": "Task",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{\"is_initiative\":1,\"top_task\":1}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "modified": "2024-07-05 11:48:57.859088",
+ "modified_by": "Administrator",
+ "module": "Ehc Customization",
+ "name": "Initiative Level",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "EHC Initiative Level",
+ "roles": [
+  {
+   "role": "Projects Manager"
+  }
+ ],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "subject",
+ "y_axis": [
+  {
+   "color": "#39E4A5",
+   "y_field": "progress"
+  }
+ ]
+}

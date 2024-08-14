@@ -1,0 +1,13 @@
+{
+    "Payment Mode Invoice": [
+        {
+        "fieldname": "custom_percentage",
+        "fieldtype": "Float",
+        "insert_after": "mode_of_payment",
+        "label": "Percentage",
+        "in_list_view": 1,
+        "default": "0",
+        "module": "EHC Customization"
+        } 
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "Attendance Request": [
+        {
+            "doctype": "Attendance Request",
+            "fieldname": "reason",
+            "property": "hidden",
+            "property_type": "Check",
+            "value": "1"
+        },
+        {
+            "doctype": "Attendance Request",
+            "fieldname": "from_date",
+            "property": "read_only",
+            "property_type": "Check",
+            "value": "1"
+        },
+        {
+            "doctype": "Attendance Request",
+            "fieldname": "start_time",
+            "property": "read_only",
+            "property_type": "Check",
+            "value": "0"
+        }
+] } 

@@ -1,0 +1,23 @@
+{
+    "Journal Entry": [
+        {
+        "fieldname": "custom_copayment",
+        "fieldtype": "Select",
+        "insert_after": "voucher_type",
+        "label": "CoPayment",
+        "options": "\nYes\nNo",
+        "default": "No",
+        "in_standard_filter": 1,
+        "read_only": 1,
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_budget_validation",
+        "fieldtype": "Check",
+        "insert_after": "posting_date",
+        "label": "Budget Validation",
+        "read_only": 1,
+        "module": "EHC Customization"
+        }
+    ]
+}

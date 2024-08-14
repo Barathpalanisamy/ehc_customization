@@ -1,0 +1,69 @@
+{
+    "Employee": [
+        {
+        "fieldname": "custom_section_break_nimh7",
+        "fieldtype": "Section Break",
+        "insert_after": "nationality_1",
+        "label": "Accounts",
+        "read_only": 0,
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_column_break_gbzfm",
+        "fieldtype": "Column Break",
+        "insert_after": "custom_accounting_department",
+        "label": null,
+        "read_only": 0,
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_invoice_type",
+        "fieldtype": "Link",
+        "insert_after": "custom_column_break_gbzfm",
+        "label": "Invoice Type",
+        "read_only": 0,
+        "options": "Invoice Type",
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_generate_cost_center_permission",
+        "fieldtype": "Check",
+        "insert_after": "custom_invoice_type",
+        "label": "Generate Cost Center Permission",
+        "read_only": 0,
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_generate_accounting_department_permission",
+        "fieldtype": "Check",
+        "insert_after": "custom_generate_cost_center_permission",
+        "label": "Generate Accounting Department Permission",
+        "read_only": 0,
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_hr_team",
+        "fieldtype": "Link",
+        "insert_after": "leave_approver",
+        "label": "HR Team",
+        "options": "User",
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_attendance_team",
+        "fieldtype": "Link",
+        "insert_after": "shift_request_approver",
+        "label": "Attendance Team",
+        "options": "User",
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "manager_type",
+        "fieldtype": "Select",
+        "insert_after": "reports_to",
+        "label": "Manager Type",
+        "options": "Direct Manager\nAssigned Manager",
+        "module": "EHC Customization"
+        }
+    ]
+}

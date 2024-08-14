@@ -1,0 +1,220 @@
+{
+ "actions": [],
+ "autoname": "HR-EMP-DEL-.YYYY.-.#####",
+ "creation": "2024-04-24 12:14:25.701501",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "transfer_type",
+  "to_date",
+  "transfer_date",
+  "employee_name",
+  "column_break_3",
+  "new_employee",
+  "company",
+  "new_company",
+  "department",
+  "designation",
+  "details_section",
+  "employee_transfer_details",
+  "new_employee_responsibilty_section",
+  "responsibility_details",
+  "reallocate_leaves",
+  "create_new_employee_id",
+  "new_employee_id",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Current Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "transfer_date",
+   "fieldtype": "Date",
+   "label": "Transfer Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "new_company",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "New Company",
+   "options": "Company"
+  },
+  {
+   "bold": 1,
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Current Employee Proprty Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "reallocate_leaves",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Re-allocate Leaves"
+  },
+  {
+   "default": "0",
+   "fieldname": "create_new_employee_id",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Create New Employee Id"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "new_employee_id",
+   "fieldtype": "Link",
+   "label": "New Employee ID",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fieldname": "new_employee",
+   "fieldtype": "Link",
+   "label": "New Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fetch_if_empty": 1,
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "employee_transfer_details",
+   "fieldtype": "Table",
+   "label": "Employee Handover Details",
+   "options": "Responsibilty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "new_employee_responsibilty_section",
+   "fieldtype": "Section Break",
+   "label": "New Employee Responsibillty"
+  },
+  {
+   "fieldname": "responsibility_details",
+   "fieldtype": "Table",
+   "label": "Responsibility Details",
+   "options": "Responsibilty"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "options": "Employee Delegation"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "options": "Employee Delegation"
+  },
+  {
+   "fieldname": "transfer_type",
+   "fieldtype": "Select",
+   "label": "Transfer Type",
+   "options": "Permanent\nTemporary",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.transfer_type == \"Temporary\"",
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "Transfer End Date",
+   "mandatory_depends_on": "eval:doc.transfer_type == \"Temporary\""
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-05-14 16:29:28.109816",
+ "modified_by": "Administrator",
+ "module": "Ehc Customization",
+ "name": "Employee Delegation",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee_name",
+ "track_changes": 1
+}

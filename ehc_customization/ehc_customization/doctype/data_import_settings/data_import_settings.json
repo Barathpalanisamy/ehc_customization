@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-10 13:23:09.545065",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attach",
+  "column_mapping",
+  "compare_salary_component",
+  "compare_national_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_mapping",
+   "fieldtype": "Table",
+   "label": "Data Import Column Mapping",
+   "options": "Column Value Map"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "label": "Column Header Attach"
+  },
+  {
+   "default": "0",
+   "fieldname": "compare_salary_component",
+   "fieldtype": "Check",
+   "label": "Compare Salary Component"
+  },
+  {
+   "default": "0",
+   "fieldname": "compare_national_id",
+   "fieldtype": "Check",
+   "label": "Compare National Id"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-05-15 19:46:13.976305",
+ "modified_by": "Administrator",
+ "module": "Ehc Customization",
+ "name": "Data Import Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

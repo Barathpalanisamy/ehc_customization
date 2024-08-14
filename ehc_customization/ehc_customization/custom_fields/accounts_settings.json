@@ -1,0 +1,20 @@
+{
+    "Accounts Settings": [
+        {
+        "fieldname": "custom_allow_excess_payment",
+        "fieldtype": "Check",
+        "insert_after": "allow_multi_currency_invoices_against_single_party_account",
+        "label": "Allow Excess Payment",
+        "default": "0",
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_allow_multiple_discount",
+        "fieldtype": "Check",
+        "insert_after": "custom_allow_excess_payment",
+        "label": "Allow Multiple Discount",
+        "default": "0",
+        "module": "EHC Customization"
+        }
+    ]
+}

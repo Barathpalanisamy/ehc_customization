@@ -1,0 +1,12 @@
+{
+    "Interview Feedback": [
+        {
+        "fieldname": "average_rating_number",
+        "fieldtype": "Float",
+        "label": "Average Rating in Numbers",
+        "insert_after": "average_rating",
+        "read_only": 1,
+        "module": "EHC Customization"
+        }
+    ]
+}

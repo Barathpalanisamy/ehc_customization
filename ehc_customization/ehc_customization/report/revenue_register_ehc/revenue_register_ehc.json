@@ -1,0 +1,36 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2024-04-16 12:59:20.239073",
+ "disable_prepared_report": 1,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "EHC Logo",
+ "modified": "2024-04-16 12:59:20.239073",
+ "modified_by": "Administrator",
+ "module": "Ehc Customization",
+ "name": "Revenue Register EHC",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Sales Invoice",
+ "report_name": "Revenue Register EHC",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "AR Clerk"
+  },
+  {
+   "role": "AR Manager"
+  },
+  {
+   "role": "AR Supervisor"
+  }
+ ]
+}

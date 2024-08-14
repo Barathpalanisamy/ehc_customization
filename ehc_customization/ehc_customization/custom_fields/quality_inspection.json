@@ -1,0 +1,54 @@
+{
+    "Quality Inspection": [
+        {
+        "fieldname": "custom_ehc_evaluator",
+        "fieldtype": "Table MultiSelect",
+        "label": "EHC Evaluator",
+        "insert_after": "ehc_evaluator",
+        "module": "EHC Customization",
+        "options": "User Table"
+        },
+        {
+        "fieldname": "custom_ehc_validator",
+        "fieldtype": "Table MultiSelect",
+        "label": "EHC Validator",
+        "insert_after": "custom_ehc_evaluator",
+        "module": "EHC Customization",
+        "options": "User Table"
+        },
+        {
+        "fieldname": "custom_ehc_investigator",
+        "fieldtype": "Table MultiSelect",
+        "label": "EHC Investigator",
+        "insert_after": "custom_ehc_validator",
+        "module": "EHC Customization",
+        "options": "User Table"
+        },
+
+
+        {
+        "fieldname": "custom_ehc_approver",
+        "fieldtype": "Table MultiSelect",
+        "label": "EHC Approver",
+        "insert_after": "ehc_approver",
+        "module": "EHC Customization",
+        "options": "User Table"
+        },
+        {
+        "fieldname": "custom_network_representative",
+        "fieldtype": "Table MultiSelect",
+        "label": "Network Representative",
+        "insert_after": "custom_ehc_approver",
+        "module": "EHC Customization",
+        "options": "User Table"
+        },
+        {
+        "fieldname": "custom_facility_representative_new",
+        "fieldtype": "Table MultiSelect",
+        "label": "Facility Representative",
+        "insert_after": "custom_network_representative",
+        "module": "EHC Customization",
+        "options": "User Table"
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "Budget": [
+        {
+            "doctype": "Budget",
+            "fieldname": "accounts",
+            "property": "allow_on_submit",
+            "property_type": "Check",
+            "value": "0"
+        },
+        {
+            "doctype": "Budget",
+            "fieldname": "accounting_department",
+            "property": "depends_on",
+            "property_type": "Data",
+            "value": ""
+        },
+        {
+            "doctype": "Budget",
+            "fieldname": "applicable_on_material_request",
+            "property": "depends_on",
+            "property_type": "Data",
+            "value": "eval:doc.custom_apply_budget_restrictions ==0;"
+        },
+        {
+            "doctype": "Budget",
+            "fieldname": "applicable_on_purchase_order",
+            "property": "depends_on",
+            "property_type": "Data",
+            "value": "eval:doc.custom_apply_budget_restrictions ==0;"
+        },
+        {
+            "doctype": "Budget",
+            "fieldname": "applicable_on_booking_actual_expenses",
+            "property": "depends_on",
+            "property_type": "Data",
+            "value": "eval:doc.custom_apply_budget_restrictions ==0;"
+        },
+        {
+            "doctype": "Budget",
+            "fieldname": "action_if_annual_budget_exceeded",
+            "property": "depends_on",
+            "property_type": "Data",
+            "value": "eval:doc.applicable_on_booking_actual_expenses == 1 && doc.custom_apply_budget_restrictions ==0;"
+        },
+        {
+            "doctype": "Budget",
+            "fieldname": "action_if_accumulated_monthly_budget_exceeded",
+            "property": "depends_on",
+            "property_type": "Data",
+            "value": "eval:doc.applicable_on_booking_actual_expenses == 1 && doc.custom_apply_budget_restrictions ==0;"
+        },
+        {
+            "doctype": "Budget",
+            "fieldname": "action_if_annual_budget_exceeded_on_mr",
+            "property": "depends_on",
+            "property_type": "Data",
+            "value": "eval:doc.applicable_on_material_request == 1 && doc.custom_apply_budget_restrictions ==0;"
+        },
+        {
+            "doctype": "Budget",
+            "fieldname": "action_if_accumulated_monthly_budget_exceeded_on_mr",
+            "property": "depends_on",
+            "property_type": "Data",
+            "value": "eval:doc.applicable_on_material_request == 1 && doc.custom_apply_budget_restrictions ==0;"
+        },
+        {
+            "doctype": "Budget",
+            "fieldname": "action_if_annual_budget_exceeded_on_po",
+            "property": "depends_on",
+            "property_type": "Data",
+            "value": "eval:doc.applicable_on_purchase_order == 1 && doc.custom_apply_budget_restrictions ==0;"
+        },
+        {
+            "doctype": "Budget",
+            "fieldname": "action_if_accumulated_monthly_budget_exceeded_on_po",
+            "property": "depends_on",
+            "property_type": "Data",
+            "value": "eval:doc.applicable_on_purchase_order == 1 && doc.custom_apply_budget_restrictions ==0;"
+        }
+
+] } 

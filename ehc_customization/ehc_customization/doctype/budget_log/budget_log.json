@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2024-05-24 18:56:55.776265",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "account",
+  "budget",
+  "amount_before_transfer",
+  "amount_after_transfer",
+  "difference_amount",
+  "user"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "BLOG.YY.-.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Account",
+   "options": "Account",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Budget",
+   "options": "Budget",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount_before_transfer",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Amount Before Transfer",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount_after_transfer",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Amount After Transfer",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "difference_amount",
+   "fieldtype": "Data",
+   "label": "Difference Amount",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "label": "User",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-24 18:56:55.776265",
+ "modified_by": "Administrator",
+ "module": "ehc_customization",
+ "name": "Budget Log",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

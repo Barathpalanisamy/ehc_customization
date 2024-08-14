@@ -1,0 +1,267 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-04-20 11:46:07.159140",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "column_break_3",
+  "posting_date",
+  "column_break_4",
+  "company",
+  "section_break_7",
+  "from_budget_against",
+  "from_budget",
+  "from_fiscal_year",
+  "from_account",
+  "from_budget_before_transfer",
+  "from_budget_after_transfer",
+  "column_break_12",
+  "from_budget_available",
+  "transfer",
+  "column_break_9",
+  "to_budget_against",
+  "to_cost_center",
+  "to_accounting_department",
+  "to_budget",
+  "to_fiscal_year",
+  "to_account",
+  "to_budget_before_transfer",
+  "to_budget_after_transfer",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "BT.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "BT.-.#####",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Budget Account Details"
+  },
+  {
+   "fieldname": "from_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "From Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "To Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Budget Transfer",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "transfer",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Budget to Transfer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_budget_against",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "From Budget Against",
+   "options": "Cost Center\nEvent\nCamp\nProject",
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_budget",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "From Budget",
+   "options": "Budget",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "budget.fiscal_year",
+   "fieldname": "from_fiscal_year",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "From Fiscal Year",
+   "options": "Fiscal Year",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "from_budget_available",
+   "fieldtype": "Currency",
+   "label": "Budget Available",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_budget_against",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "To Budget Against",
+   "options": "Cost Center\nEvent\nCamp\nProject",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_budget",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "To Budget",
+   "options": "Budget"
+  },
+  {
+   "fieldname": "to_fiscal_year",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "To Fiscal Year",
+   "options": "Fiscal Year",
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_budget_before_transfer",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "From Budget Before Transfer"
+  },
+  {
+   "fieldname": "from_budget_after_transfer",
+   "fieldtype": "Currency",
+   "label": "From Budget Amount",
+   "read_only": 1
+  },
+  {
+   "description": "1",
+   "fieldname": "to_budget_before_transfer",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "To Budget Before Transfer"
+  },
+  {
+   "description": "1",
+   "fieldname": "to_budget_after_transfer",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "To Budget After Transfer"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_cost_center",
+   "fieldtype": "Link",
+   "label": "To Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "to_accounting_department",
+   "fieldtype": "Link",
+   "label": "To Accounting Department",
+   "options": "Accounting Department"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-05-22 15:28:32.659668",
+ "modified_by": "Administrator",
+ "module": "ehc_customization",
+ "name": "Budget Transfer",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

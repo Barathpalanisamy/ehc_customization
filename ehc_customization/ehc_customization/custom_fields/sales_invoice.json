@@ -1,0 +1,48 @@
+{
+    "Sales Invoice": [
+        {
+        "fieldname": "custom_section_break_fsfc9",
+        "fieldtype": "Section Break",
+        "label": null,
+        "insert_after": "payments",
+        "read_only": 0,
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_payment_mode",
+        "fieldtype": "Table",
+        "label": "Payment Mode",
+        "insert_after": "custom_section_break_fsfc9",
+        "read_only": 0,
+        "options": "Payment Mode Invoice",
+        "depends_on": "eval:doc.custom_is_paid;",
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_is_paid",
+        "fieldtype": "Check",
+        "label": "Is Paid",
+        "insert_after": "custom_payment_mode",
+        "default": "0",
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_total_amount",
+        "fieldtype": "Currency",
+        "label": "Total Amount",
+        "insert_after": "paid_amount",
+        "default": "0",
+        "read_only": 1,
+        "depends_on": "eval:doc.custom_is_paid;",
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_budget_validation",
+        "fieldtype": "Check",
+        "label": "Budget Validation",
+        "insert_after": "company_tax_id",
+        "read_only": 1,
+        "module": "EHC Customization"
+        }
+    ]
+}

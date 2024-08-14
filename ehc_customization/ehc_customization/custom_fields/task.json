@@ -1,0 +1,12 @@
+{
+    "Task": [
+        {
+        "fieldname": "custom_is_initiative",
+        "fieldtype": "Check",
+        "label": "Is Initiative",
+        "insert_after": "start",
+        "default": "0",
+        "module": "EHC Customization"
+        }
+    ]
+}

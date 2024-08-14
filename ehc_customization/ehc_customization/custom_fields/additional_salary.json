@@ -1,0 +1,62 @@
+{
+    "Additional Salary": [
+        {
+            "fieldname": "custom_paid_additional_salary",
+            "fieldtype": "Check",
+            "label": "Paid Additional Salary",
+            "insert_after": "overwrite_salary_structure_amount",
+            "read_only": 1,
+            "module": "EHC Customization"
+            },
+        {
+            "fieldname": "merging_details",
+            "fieldtype": "Section Break",
+            "insert_after": "no_of_hours",
+            "read_only": 1,
+            "module": "EHC Customization"
+            },
+        {
+            "fieldname": "custom_salary_merging",
+            "fieldtype": "Small Text",
+            "insert_after": "merging_details",
+            "label":"Value Merging Details",
+            "read_only": 1,
+            "module": "EHC Customization"
+            },
+        {
+            "fieldname": "custom_basic_salary",
+            "fieldtype": "Data",
+            "insert_after": "custom_salary_merging",
+            "label":"Basic Salary",
+            "read_only": 1,
+            "hidden": 1,
+            "module": "EHC Customization"
+        },
+        {
+            "fieldname": "custom_national_id",
+            "fieldtype": "Data",
+            "insert_after": "employee_name",
+            "label":"National ID",
+            "module": "EHC Customization"
+        },
+        {
+            "fieldname": "custom_salary_slip",
+            "fieldtype": "Data",
+            "insert_after": "custom_paid_additional_salary",
+            "label":"Salary Slip",
+            "read_only": 1,
+            "hidden": 1,
+            "module": "EHC Customization"
+        },
+        {
+            "fieldname": "custom_payroll_entry",
+            "fieldtype": "Data",
+            "insert_after": "custom_salary_slip",
+            "label":"Payroll Entry",
+            "read_only": 1,
+            "hidden": 1,
+            "module": "EHC Customization"
+        }
+            
+    ]
+}

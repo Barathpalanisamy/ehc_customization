@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.status == 'Approved'",
+ "creation": "2024-05-06 10:10:08.576872",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Violation Request",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Late Reason Approved</title>\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            margin: 0;\n            padding: 0;\n            background-color: #f4f4f4;\n        }\n        .container {\n            max-width: 600px;\n            margin: 20px auto;\n            padding: 20px;\n            background-color: #fff;\n            border-radius: 5px;\n            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n        }\n        h1, p {\n            margin: 0;\n        }\n        .message {\n            margin-top: 20px;\n        }\n        .footer {\n            margin-top: 20px;\n            font-size: 12px;\n            color: #666;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"container\">\n        <h1>Late Reason Approved</h1>\n        <p>Dear {{doc.employee}},</p>\n        <div class=\"message\">\n            <p>Your reason for being late has been approved by your manager. Please note the following details:</p>\n            <p><strong>Reason:</strong> {{doc.employee_reason}}</p>\n            <p>You are permitted to arrive late on the specified date due to the reason provided. Ensure to make up for the lost time accordingly.</p>\n        </div>\n        <div class=\"footer\">\n            <p>Best Regards,<br> {{frappe.session.user}}<br></p>\n        </div>\n    </div>\n</body>\n</html>\n",
+ "message_type": "Markdown",
+ "modified": "2024-05-06 12:03:24.655846",
+ "modified_by": "Administrator",
+ "module": "ehc_customization",
+ "name": "Late Reason Approved",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "email_id"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "Reason Approved"
+}

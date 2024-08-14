@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2024-05-03 15:27:23.045268",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "violation_request",
+  "employee",
+  "deduction_type",
+  "late_count",
+  "fiscal_year",
+  "column_break_lops3",
+  "deduction_days",
+  "deduction_hours",
+  "penalty_days",
+  "month",
+  "employee_name",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "unique": 1
+  },
+  {
+   "fieldname": "violation_request",
+   "fieldtype": "Link",
+   "label": "Violation Request",
+   "options": "Violation Request"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Attendance Deduction",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_lops3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "deduction_days",
+   "fieldtype": "Float",
+   "label": "Deduction Days",
+   "precision": "1"
+  },
+  {
+   "fieldname": "late_count",
+   "fieldtype": "Data",
+   "label": "Late Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Data",
+   "label": "Month",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "deduction_hours",
+   "fieldtype": "Float",
+   "label": "Deduction Hours "
+  },
+  {
+   "fieldname": "deduction_type",
+   "fieldtype": "Select",
+   "label": "Deduction Type",
+   "options": "Day Based\nHour Based\nPenalty Based"
+  },
+  {
+   "default": "0",
+   "fieldname": "penalty_days",
+   "fieldtype": "Int",
+   "label": "Penalty Days"
+  },
+  {
+   "fetch_from": "violation_request.fiscal_year",
+   "fieldname": "fiscal_year",
+   "fieldtype": "Link",
+   "label": "Fiscal Year",
+   "options": "Fiscal Year"
+  },
+  {
+   "depends_on": "eval:doc.violation_request;",
+   "fetch_from": "violation_request.employee",
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "violation_request.employee",
+   "fieldname": "employee_name",
+   "fieldtype": "Link",
+   "label": "Employee Name",
+   "options": "Employee"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-05-12 11:25:05.597221",
+ "modified_by": "Administrator",
+ "module": "ehc_customization",
+ "name": "Attendance Deduction",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

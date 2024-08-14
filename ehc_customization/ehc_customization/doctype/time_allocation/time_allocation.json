@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-28 18:42:45.711791",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "month",
+  "permission_type",
+  "allocated_time",
+  "available_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "month",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Month",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "allocated_time",
+   "fieldtype": "Float",
+   "label": "Allocated Hours",
+   "read_only": 1
+  },
+  {
+   "fieldname": "permission_type",
+   "fieldtype": "Link",
+   "label": "Permission Type",
+   "options": "Permission Type",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "available_time",
+   "fieldtype": "Float",
+   "label": "Available Hours",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-10 08:26:56.876649",
+ "modified_by": "Administrator",
+ "module": "ehc_customization",
+ "name": "Time Allocation",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

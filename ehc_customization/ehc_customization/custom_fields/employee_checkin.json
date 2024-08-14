@@ -1,0 +1,41 @@
+{
+    "Employee Checkin": [
+        {
+        "fieldname": "custom_permission_hours",
+        "fieldtype": "Float",
+        "insert_after": "shift_actual_end",
+        "label": "Permission Hours",
+        "read_only": 1,
+        "hidden": 1,
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_attendance_request",
+        "fieldtype": "Data",
+        "insert_after": "custom_permission_hours",
+        "label": "Attendance Request",
+        "read_only": 1,
+        "hidden": 1,
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_department",
+        "fieldtype": "Link",
+        "insert_after": "employee_name",
+        "label": "Department",
+        "read_only": 1,
+        "fetch_from": "employee.department",
+        "options": "Department",
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "custom_reporting_manager",
+        "fieldtype": "Data",
+        "insert_after": "custom_department",
+        "label": "Reporting Manager",
+        "read_only": 1,
+        "fetch_from": "employee.reports_to",
+        "module": "EHC Customization"
+        } 
+    ]
+}

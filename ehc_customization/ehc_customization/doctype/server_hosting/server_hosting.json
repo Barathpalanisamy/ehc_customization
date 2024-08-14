@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-10 14:35:38.083643",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "source_url",
+  "user_id",
+  "secret_key",
+  "column_break_my5s",
+  "target_url",
+  "target_id",
+  "target_key"
+ ],
+ "fields": [
+  {
+   "fieldname": "source_url",
+   "fieldtype": "Data",
+   "label": "Source Url"
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Data",
+   "label": "User ID"
+  },
+  {
+   "fieldname": "secret_key",
+   "fieldtype": "Password",
+   "label": "Secret Key"
+  },
+  {
+   "fieldname": "column_break_my5s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_url",
+   "fieldtype": "Data",
+   "label": "Target Url"
+  },
+  {
+   "fieldname": "target_id",
+   "fieldtype": "Data",
+   "label": "Target ID"
+  },
+  {
+   "fieldname": "target_key",
+   "fieldtype": "Password",
+   "label": "Target Key"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-06-26 10:29:17.565472",
+ "modified_by": "Administrator",
+ "module": "Ehc Customization",
+ "name": "Server Hosting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

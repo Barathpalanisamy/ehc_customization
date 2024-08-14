@@ -1,0 +1,12 @@
+{
+    "Skill Assessment": [
+        {
+        "fieldname": "custom_rating_no",
+        "fieldtype": "Float",
+        "label": "Rating in Numbers",
+        "insert_after": "rating",
+        "read_only": 1,
+        "module": "EHC Customization"
+        }
+    ]
+}

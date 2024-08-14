@@ -1,0 +1,21 @@
+{
+    "Purchase Invoice": [
+        {
+        "fieldname": "custom_multiple_discount",
+        "fieldtype": "Table",
+        "label": "Multiple Discount",
+        "insert_after": "disable_rounded_total",
+        "read_only": 0,
+        "module": "EHC Customization",
+        "options": "Purchase Invoice Discounts"
+        },
+        {
+        "fieldname": "custom_budget_validation",
+        "fieldtype": "Check",
+        "label": "Budget Validation",
+        "insert_after": "due_date",
+        "read_only": 1,
+        "module": "EHC Customization"
+        }
+    ]
+}

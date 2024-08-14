@@ -1,0 +1,28 @@
+{
+    "Job Seeking Users": [
+        {
+        "fieldname": "custom_nat_id",
+        "fieldtype": "Data",
+        "label": "National ID",
+        "translatable": 1,
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "experience_years",
+        "fieldtype": "Data",
+        "label": "Experience in Years",
+        "translatable": 1,
+        "reqd": 1,
+        "insert_after": "work_experience_details_section",
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "overlap_experience_in_years",
+        "fieldtype": "Float",
+        "label": "Certifications Experience in Years",
+        "read_only": 1,
+        "insert_after": "education",
+        "module": "EHC Customization"
+        }
+    ]
+}

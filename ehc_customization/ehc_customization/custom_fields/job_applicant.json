@@ -1,0 +1,13 @@
+{
+    "Job Applicant":[
+        {
+            "fieldname": "overlap_experience_in_years",
+            "fieldtype": "Float",
+            "insert_after": "experience_years",
+            "read_only":1,
+            "label": "Certifications Experience in Years",
+            "module": "EHC Customization"
+        } 
+
+    ]
+}

@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include ehc_customization *.css
+recursive-include ehc_customization *.csv
+recursive-include ehc_customization *.html
+recursive-include ehc_customization *.ico
+recursive-include ehc_customization *.js
+recursive-include ehc_customization *.json
+recursive-include ehc_customization *.md
+recursive-include ehc_customization *.png
+recursive-include ehc_customization *.py
+recursive-include ehc_customization *.svg
+recursive-include ehc_customization *.txt
+recursive-exclude ehc_customization *.pyc

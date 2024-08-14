@@ -1,0 +1,29 @@
+{
+    "Designation": [
+        {
+        "fieldname": "details",
+        "fieldtype": "Section Break",
+        "label": "Employee Delegation Details",
+        "insert_after": "skills",
+        "module": "EHC Customization"
+        },
+        {
+        "fieldname": "transfer_details",
+        "fieldtype": "Table",
+        "label": "Employee Delegation Details",
+        "insert_after": "details",
+        "options":"Responsibilty",
+        "module": "EHC Customization",
+        "read_only":1
+        },
+        {
+        "fieldname": "employee_responsibility",
+        "fieldtype": "Link",
+        "label": "Employee Responsibility",
+        "insert_after": "appraisal_template",
+        "options":"Employee Responsibility",
+        "module": "EHC Customization"
+        }
+
+    ]
+}

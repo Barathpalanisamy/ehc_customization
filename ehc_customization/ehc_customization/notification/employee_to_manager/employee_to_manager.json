@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.status == 'Forward To Manager'",
+ "creation": "2024-05-03 01:00:19.770906",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Violation Request",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p><!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Notification: Employee Response</title>\n</head>\n<body style=\"font-family: Arial, sans-serif; margin: 0; padding: 0;\">\n    <div style=\"max-width: 600px; margin: 20px auto; background-color: #f4f4f4; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\">\n        <div style=\"background-color: #007bff; color: #fff; padding: 10px; border-radius: 8px 8px 0 0;\">\n            <h2 style=\"margin: 0;\">Notification: Employee Response</h2>\n        </div>\n        <div style=\"padding: 20px;\">\n            <p>Dear {{doc.user}},</p>\n            <p>This is to inform you that {{doc.employee}} has replied to your message regarding Late Entry.</p>\n            <p>Please review the response at your earliest convenience.</p>\n            <p>Thank you.</p>\n        </div>\n    </div>\n</body>\n</html></p>\n",
+ "message_type": "HTML",
+ "modified": "2024-05-03 10:48:57.886114",
+ "modified_by": "Administrator",
+ "module": "ehc_customization",
+ "name": "Employee To Manager",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "",
+   "receiver_by_document_field": "user"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "Reason for Late"
+}

@@ -1,0 +1,12 @@
+{
+    "Department": [
+        {
+        "fieldname": "custom_reports_to",
+        "fieldtype": "Link",
+        "label": "Reports To",
+        "options": "Employee",
+        "insert_after": "approvers",
+        "module": "EHC Customization"
+        }
+    ]
+}
